@@ -38,6 +38,21 @@ in each category, rather than just the most popular one. (`Y/N`; case-insensitiv
 5. After the analysis runs and the reports display, the user has the option to
 display the raw data file five lines at a time. Anything except `no <Enter>`
 will display the next five lines.
+The raw data are:
+  - Start Time (e.g., 2017-01-01 00:07:57)
+  - End Time (e.g., 2017-01-01 00:20:53)
+  - Trip Duration (in seconds - e.g., 776)
+  - Start Station (e.g., Broadway & Barry Ave)
+  - End Station (e.g., Sedgwick St & North Ave)
+  - User Type (Subscriber, Customer, Dependent)
+  - Gender (Female, Male; New York & Chicago only)
+  - Birth Year (New York & Chicago only)
+  - Month of Trip (integer; e.g., Jan = 1, Jun = 6)
+  - Day of Trip (by name, e.g. Monday)
+  - Hour of Trip Start (e.g. 8)
+  - Trip (Start Station - End Station; e.g.  Broadway & Barry Ave -
+    Sedgwick St & North Ave)
+
 6. Finally, the user has the option to restart at the beginning. Anything except
 `yes <Enter>` stops the program.
 
