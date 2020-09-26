@@ -1,7 +1,10 @@
+# bikeshare.py: reads .csv-formatted bikesharing data 
+# and displays user-customizable reports
 import time
 import pandas as pd
 import sys
 
+# data files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -25,7 +28,7 @@ def get_filters():
         (bool) detailed - whether or not to print detailed reports
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). 
     city = ''
     while city not in CITY_DATA.keys():
         city = input('Enter city to retrieve bikeshare data for (Washington, \
@@ -60,6 +63,7 @@ New York, Chicago): ').lower()
 
     print('Your day choice was: {}'.format(DAY_DATA[day]))
     
+    # allow user to select whether or not detailed data are displayed
     detail = ''
     detailed = False
     while detail.upper() not in ('Y', 'N'):
